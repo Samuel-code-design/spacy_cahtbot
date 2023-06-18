@@ -151,12 +151,9 @@ def get_response(input_text):
     # preprocess text
     query = preprocess_text(input_text)  # Preprocess the user's input
 
-    # Add code here to generate the chatbot response using the loaded_graph
-    # return generate_answer(G, query)
     answer = generate_answer(G, query)
     if not answer:
         return "I'm sorry i dont know the answer to that"
-
     return answer
 
 # Loop to continuously prompt the user for input and return chatbot responses
